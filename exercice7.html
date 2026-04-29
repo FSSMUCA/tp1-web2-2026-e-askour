@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 7</h1>
+    <h1> Calculatrice de cercle</h1>
+<div id="rayon"></div>
+<div id="perimetre"></div>
+<div id="surface"></div>
+
+    <script>
+      const PI=Math.PI;
+      let perimetre,surface,rayon=prompt("sassire le rayon du sercle");
+      rayon=Number(rayon);
+      perimetre=2*PI*rayon;
+      perimetre=(perimetre).toFixed(2);
+      surface=PI*rayon*rayon;
+      surface=(surface).toFixed(2);
+      document.getElementById("rayon").innerHTML=`Rayon : ${rayon} cm`;
+      document.getElementById("perimetre").innerHTML=`Périmètre : ${perimetre} cm`;
+      document.getElementById("surface").innerHTML=`Surface : ${surface} cm2`;
+    </script>
+  </body>
+</html>

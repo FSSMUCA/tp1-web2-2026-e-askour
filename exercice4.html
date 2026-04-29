@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>TP JavaScript</title>
+</head>
+<body>
+<h1>Exercice 4</h1>
+<!-- Votre contenu HTML ici -->
+<script>
+    let prenom,age,anner_nessence,result;
+    prenom=window.prompt("Donner votre prenom : ");
+    age=window.prompt("Donner votre Âge : ");
+    Number(age);
+    anner_nessence=2026-age;
+    window.alert(`bonjour ${prenom} ! vous etes ne vers ${anner_nessence}`);
+    result=confirm("Afficher dans la console ?");
+    if(result==1){
+        console.log(`Prénom : ${prenom}`);
+        console.log(`Âge : ${age}`);
+        console.log(`Anner de néssence : ${anner_nessence}`);
+    }if(result==0){
+        console.log("vous information est privé !");
+    }
+</script>
+</body>
